@@ -13,7 +13,7 @@
 /**
  * 将Trace信息输出到chrome浏览器的控制器，从而不影响ajax效果和页面的布局。
  * 使用前，你需要先安装 chrome log 这个插件： http://craig.is/writing/chrome-logger。
- * 定义应用的tags.php文件 Application/Common/Conf/tags.php， 
+ * 定义应用的tags.php文件 Apps/Common/Conf/tags.php，
  * <code>
  * <?php return array(
  *   'app_end'=>array(

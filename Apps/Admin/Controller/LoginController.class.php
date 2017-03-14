@@ -9,7 +9,7 @@ class LoginController extends Controller
         return $this->display();
     }
 
-    public function check(){
-
-    }
+    //public function check(){
+    //
+    //}
 }
