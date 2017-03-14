@@ -8,7 +8,9 @@ use Think\Controller;
 
 class IndexController extends Controller
 {
-    public function index(){
-        echo "1";
+    public function Index(){
+        return $this->display();
+        //var_dump(C());
     }
+
 }
