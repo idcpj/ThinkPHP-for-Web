@@ -1,0 +1,18 @@
+[ 2017-03-14T19:17:03+08:00 ] ::1 /ThinkPHP-for-Web/index.php?m=login&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-03-14T19:20:15+08:00 ] ::1 /ThinkPHP-for-Web/index.php?m=login&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+ERR: 无法加载控制器:Index
+
