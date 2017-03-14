@@ -68,7 +68,7 @@ class ReadHtmlCacheBehavior {
                 $rule     = preg_replace_callback('/{(\w+)}/', function($match){return $_GET[$match[1]];}, $rule);
                 // 特殊系统变量
                 $rule   = str_ireplace(
-                    array('{:controller}','{:action}','{:module}'),
+                    array('{:Controller}','{:action}','{:module}'),
                     array(CONTROLLER_NAME,ACTION_NAME,MODULE_NAME),
                     $rule);
                 // {|FUN} 单独使用函数

@@ -6,7 +6,7 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: hainuo<admin@hainuo.info> liu21st <liu21st@gmail.com>
+// | Author: hainuo<Admin@hainuo.info> liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 // | change  mysql to mysqli  解决php7没有mysql扩展时数据库存放session无法操作的问题
 // +----------------------------------------------------------------------
