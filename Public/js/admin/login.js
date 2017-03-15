@@ -24,7 +24,7 @@ var login = {
                 return dialog.error(result.message);
             }
             if (result.status === 1){
-                return dialog.success(result.message,'/index.php?m=admin&c=admin&a=index');
+                return dialog.success(result.message,'/index.php?m=admin&c=index&a=index');
             }
 
         },'JSON')

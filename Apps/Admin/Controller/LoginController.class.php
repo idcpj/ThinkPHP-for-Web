@@ -10,7 +10,7 @@
 	{
 		public function index()
 		{
-			return $this->display();
+			return $this->display('personal');
 		}
 
 		public function check()
@@ -30,6 +30,7 @@
 			if(getMd5Password($password) != $ret['password']){
 				return show(0, "密码错误");
 			}
+			session('adminUser',$ret);
 			return show(1,"登录成功");
 		}
 	}
