@@ -6,12 +6,12 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class IndexController extends Controller
+class AdminController extends Controller
 {
     public function index(){
-        //$this->display();
-        echo "1";
+        $this->display();
     }
+
 
 
 }

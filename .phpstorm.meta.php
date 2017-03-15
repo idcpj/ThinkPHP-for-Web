@@ -8,6 +8,7 @@
 			'Adv' instanceof Think\Model\AdvModel,
 			'Mongo' instanceof Think\Model\MongoModel,
 			'View' instanceof Think\Model\ViewModel,
+			'Admin' instanceof Common\Model\AdminModel,
 			'Relation' instanceof Think\Model\RelationModel,
 			'Merge' instanceof Think\Model\MergeModel,
 		],
