@@ -23,15 +23,15 @@
   <!--[if lt IE 9]>
 
   <![endif]-->
+  <style>
+    .s_center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 
 <body>
-<style>
-  .s_center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
 <div class="s_center container col-lg-6 ">
 
     <form class="form-signin" enctype="multipart/form-data"  method="post" >
@@ -48,9 +48,10 @@
 </div> <!-- /container -->
 
 <script src="/Public/js/jquery.js"></script>
-<script src="/public/js/dialog/layer.js"></script>
-<script src="/public/js/dialog.js"></script>
-<script src="/public/js/admin/login.js"></script>
+<script src="/Public/js/dialog/layer.js"></script>
+<script src="/Public/js/dialog.js"></script>
+<script src="/Public/js/admin/login.js"></script>
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>

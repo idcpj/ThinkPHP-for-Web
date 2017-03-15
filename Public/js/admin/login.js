@@ -3,24 +3,25 @@
  * @author cc
  */
 var login = {
-    check : function(){
-        // var username = $('input[name="username"]').val();
-        // var password = $('input[name="password"]').val();
-        // if(!username){
-        //     dialog.error("账户不能为空");
+
+    check: function () {
+        var username = $('input[name="username"]').val();
+        var password = $('input[name="password"]').val();
+
+        // if (!username){
+        //     dialog.error("用户名不得为空",'/');
         // }
-        // if(!password){
-        //     dialog.error("密码不能为空");
+        // if (!password){
+        //     dialog.error("密码不得为空",'/');
         // }
-        // var url='/index.php?m=admin&c=login&a=check';
-        // var data={
-        //     'username':username,
-        //     'password':password
-        // }
-        // $.post(url,data,function(reslut){
-        //
-        // });
-        alert('1');
+        var url = '/index.php?m=admin&c=login&a=check';
+        var data = {
+            'username': username,
+            'password': password
+        };
+        $.post(url, data, function (result) {
+            return dialog.error(result.message);
+        },'JSON')
     }
 
     // check : function() {
@@ -49,4 +50,4 @@ var login = {
     //     },'JSON');
     //
     // }
-}
+};
