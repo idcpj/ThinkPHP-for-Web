@@ -131,7 +131,8 @@
                                         <td><?php echo ($vo["username"]); ?></td>
                                         <td><?php echo ($vo["realname"]); ?></td>
                                         <td><?php echo (date("Y-m-d H:i",$vo["lastlogintime"])); ?></td>
-                                        <td><span  attr-status="<?php if($vo['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($vo["admin_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span></td>
+                                        <!--<td><span  attr-status="<?php if($vo['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($vo["admin_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span></td>-->
+                                        <td>123</td>
                                         <td>    <a href="javascript:void(0)" attr-id="<?php echo ($vo["admin_id"]); ?>" id="singcms-delete"  attr-a="admin" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 

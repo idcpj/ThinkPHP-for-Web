@@ -10,14 +10,18 @@
 	{
 		public function index()
 		{
-			return $this->display('personal');
+
+			$this->display();
 		}
 
+		/**
+		 * 验证帐号
+		 */
 		public function check()
 		{
 			$username = $_POST['username'];
 			$password = $_POST['password'];
-			if( ! trim($username)){
+		if( ! trim($username)){
 				return show(0, "账户不能为空");
 			}
 			if( ! trim($password)){
@@ -32,5 +36,13 @@
 			}
 			session('adminUser',$ret);
 			return show(1,"登录成功");
+		}
+
+		/**
+		 * 退出出登录
+		 */
+		public function loginOut(){
+			session('adminUser',null);
+			$this->redirect('/index.php?m=admin&c=login&a=index');
 		}
 	}
