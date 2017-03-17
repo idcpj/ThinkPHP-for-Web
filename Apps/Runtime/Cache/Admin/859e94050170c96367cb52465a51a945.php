@@ -63,7 +63,7 @@
 
         <li class="divider"></li>
         <li>
-          <a href="/index.php?m=admin&c=login&a=loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
+          <a href="/admin.php?c=login&a=loginOut"><i class="fa fa-fw fa-power-off"></i> 退出</a>
         </li>
       </ul>
     </li>
@@ -73,6 +73,9 @@
     <ul class="nav navbar-nav side-nav nav_list">
       <li >
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
+      </li>
+      <li >
+        <a href="/admin.php?c=menu"><i class="fa fa-fw fa-dashboard"></i> 菜单管理</a>
       </li>
       <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navo): $mod = ($i % 2 );++$i;?><li >
           <a href="<?php echo (getAdminMenuUrl($navo)); ?>"><i class="fa fa-fw fa-bar-chart-o"></i> </a>

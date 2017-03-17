@@ -20,11 +20,11 @@ var login = {
             'password': password
         };
         $.post(url, data, function (result) {
-            if (result.status === 0){
-                return dialog.error(result.message);
+            if (result[0] === 0){
+                return dialog.error(result[1]);
             }
-            if (result.status === 1){
-                return dialog.success(result.message,'/index.php?m=admin&c=index&a=index');
+            if (result[0] === 1){
+                return dialog.success(result[1],'/admin.php');
             }
 
         },'JSON')

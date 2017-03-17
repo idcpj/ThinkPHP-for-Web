@@ -10,7 +10,10 @@
 	{
 		public function index()
 		{
+			if(session('adminUser')){
+				$this->redirect('/admin.php');
 
+			}
 			$this->display();
 		}
 
@@ -35,7 +38,7 @@
 				return show(0, "密码错误");
 			}
 			session('adminUser',$ret);
-			return show(1,"登录成功");
+			$this->ajaxReturn([1,"登陆成功"]);
 		}
 
 		/**
@@ -43,6 +46,6 @@
 		 */
 		public function loginOut(){
 			session('adminUser',null);
-			$this->redirect('/index.php?m=admin&c=login&a=index');
+			$this->redirect(U('Login/index'));
 		}
 	}
