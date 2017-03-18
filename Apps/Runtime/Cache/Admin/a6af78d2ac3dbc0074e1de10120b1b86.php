@@ -195,7 +195,8 @@
 <script>
 
     var SCOPE = {
-        'jump_url' : '/admin.php?c=menu&a=add',
+        'save_url' : '/admin.php?c=menu&a=add',
+        'jump_url' : '/admin.php?c=menu&',
     }
 </script>
 <script src="/Public/js/admin/common.js"></script>

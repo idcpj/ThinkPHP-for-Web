@@ -17,12 +17,12 @@ $('#singcms-button-submit').click(function () {
     $(data).each(function (i) {
         postData[this.name] = this.value;
     });
-    var url = SCOPE.jump_url;
+    var url = SCOPE.save_url;
     $.post(url, postData, function (result) {
         if (result.status === 1) {
-
+            dialog.success(result.message,SCOPE.jump_url);
         } else if (result.status === 0){
-
+            dialog.error(result.message);
         }
     }, 'JSON')
 });
