@@ -7,7 +7,7 @@ $(function() {
         'uploader' : SCOPE.ajax_upload_image_url,
         'buttonText': '上传图片',
         'fileTypeDesc': 'Image Files',
-        'fileObjName' : 'file',
+        'fileObjName' : 'file', //$_FIle
         //允许上传的文件后缀
         'fileTypeExts': '*.gif; *.jpg; *.png',
 
@@ -16,7 +16,6 @@ $(function() {
             if(response) {
                 var obj = JSON.parse(data); //由JSON字符串转换为js对象
 
-                console.log(data);
                 $('#' + file.id).find('.data').html(' 上传完毕');
 
                 //把数据展示在前端

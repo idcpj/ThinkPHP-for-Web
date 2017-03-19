@@ -112,10 +112,13 @@ class Upload {
         return $info ? $info[0] : $info;
     }
 
-    /**
-     * 上传文件
-     * @param 文件信息数组 $files ，通常是 $_FILES数组
-     */
+	/**
+	 * 上传文件
+	 *
+	 * @param 文件信息数组 $files ，通常是 $_FILES数组
+	 *
+	 * @return array|bool
+	 */
     public function upload($files='') {
         if('' === $files){
             $files  =   $_FILES;
