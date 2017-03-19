@@ -1,0 +1,536 @@
+[ 2017-03-18T19:35:00+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0439s ]
+
+[ 2017-03-18T21:07:46+08:00 ] ::1 /admin.php?c=menu&a=del&id=8
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : UPDATE `cms_menu` SET `status`='-1' WHERE ( id=8 )
+
+[ 2017-03-18T21:35:36+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+ERR: 1062:Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('菜单管理','1','admin','menu','index','1','1')
+ERR: 1062:Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('菜单管理','1','admin','menu','index','1','1')
+
+[ 2017-03-18T21:35:46+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:08+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:11+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:12+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:16+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:17+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:18+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001479s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:19+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:23+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:36:24+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+ERR: 1062:Duplicate entry '10' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单112','1','admin112','admin11','admin11','1','10')
+
+[ 2017-03-18T21:40:00+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('2','1','121','212','1212','1') [ RunTime:0.0453s ]
+
+[ 2017-03-18T21:52:22+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+ERR: 1062:Duplicate entry '14' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单1','1','admin1','admin_11','admin_11','1','14')
+ERR: 1062:Duplicate entry '14' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单1','1','admin1','admin_11','admin_11','1','14')
+
+[ 2017-03-18T21:52:22+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+
+[ 2017-03-18T21:52:26+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+ERR: 1062:Duplicate entry '14' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单1','1','admin1','admin_11','admin_11','1','14')
+ERR: 1062:Duplicate entry '14' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('我是菜单1','1','admin1','admin_11','admin_11','1','14')
+
+[ 2017-03-18T21:52:26+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-03-18T21:52:45+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+
+[ 2017-03-18T21:52:45+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+
+[ 2017-03-18T21:52:54+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+
+[ 2017-03-18T21:52:54+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-03-18T21:52:55+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+
+[ 2017-03-18T21:52:55+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+
+[ 2017-03-18T21:53:37+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+
+[ 2017-03-18T21:53:37+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+
+[ 2017-03-18T21:53:53+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+ERR: 1062:Duplicate entry '15' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','15')
+
+[ 2017-03-18T21:53:53+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-03-18T21:54:10+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+ERR: 1062:Duplicate entry '16' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','16')
+ERR: 1062:Duplicate entry '16' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','16')
+
+[ 2017-03-18T21:54:10+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+
+[ 2017-03-18T21:58:37+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+
+[ 2017-03-18T21:58:38+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+ERR: 1062:Duplicate entry '16' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','16')
+ERR: 1062:Duplicate entry '16' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','16')
+
+[ 2017-03-18T22:02:18+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+
+[ 2017-03-18T22:02:19+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+ERR: 1062:Duplicate entry '16' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','16')
+ERR: 1062:Duplicate entry '16' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('3123','1','21321','123213','321312','1','16')
+
+[ 2017-03-18T22:03:53+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2017-03-18T22:03:57+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-03-18T22:06:16+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+
+[ 2017-03-18T22:06:48+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+
+[ 2017-03-18T22:07:24+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-03-18T22:07:29+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+
+[ 2017-03-18T22:07:38+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+
+[ 2017-03-18T22:08:35+08:00 ] ::1 /admin.php?c=menu&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-03-18T22:14:55+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_1',`f`='admin_1',`status`='1',`menu_id`='12' WHERE ( menu_id=0 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:17:12+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:17:51+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:18:28+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:18:37+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:19:02+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:19:22+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-18T22:19:49+08:00 ] ::1 /admin.php?c=menu&a=update&id=12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单121212',`type`='1',`m`='admin',`c`='admin_111',`f`='admin_1',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:20:30+08:00 ] ::1 /admin.php?c=menu&a=update&id=10
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单11210',`type`='1',`m`='admin112',`c`='admin11',`f`='admin11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:21:51+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='admin_11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:22:10+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='admin_11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-18T22:22:21+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='admin_11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:22:56+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='admin_11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:23:08+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='admin_11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0002s ]
+
+[ 2017-03-18T22:23:14+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='admin_11',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:23:41+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2017-03-18T22:24:03+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:24:07+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0004s ]
+
+[ 2017-03-18T22:26:27+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:27:14+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:29:29+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 91 行.
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:29:41+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:29:50+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:32:13+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:32:58+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:34:25+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0007s ]
+
+[ 2017-03-18T22:35:18+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:35:37+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='12',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0004s ]
+
+[ 2017-03-18T22:35:48+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='1212',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0005s ]
+
+[ 2017-03-18T22:36:00+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_11',`f`='1212',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:36:08+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_1112',`f`='1212',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0003s ]
+
+[ 2017-03-18T22:36:16+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_1112',`f`='1212',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0005s ]
+
+[ 2017-03-18T22:36:19+08:00 ] ::1 /admin.php?c=menu&a=update&id=14
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单1',`type`='1',`m`='admin1',`c`='admin_1112',`f`='12121',`status`='1' WHERE ( menu_id=14 ) [ RunTime:0.0006s ]
+
+[ 2017-03-18T22:36:38+08:00 ] ::1 /admin.php?c=menu&a=update&id=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: UPDATE `cms_menu` SET `name`='我是菜单test',`type`='1',`m`='admin',`c`='admin_1',`f`='admin_1',`status`='1' WHERE ( menu_id=11 ) [ RunTime:0.0015s ]
+
+[ 2017-03-18T22:43:26+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('1212','1','2','2','212','1') [ RunTime:0.0004s ]
+
+[ 2017-03-18T22:43:49+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('houdaun','1','21','12','212','1') [ RunTime:0.0005s ]
+
+[ 2017-03-18T22:46:55+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('qiandaun','0','12','12','212','1') [ RunTime:0.0007s ]
+

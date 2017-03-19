@@ -9,7 +9,7 @@ var dialog = {
     },
 
     //成功弹出层
-    success : function(message,url) {
+        success : function(message,url) {
         layer.open({
             content : message,
             icon : 1,

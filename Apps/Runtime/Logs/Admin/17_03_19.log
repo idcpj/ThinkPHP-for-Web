@@ -1,0 +1,529 @@
+[ 2017-03-19T08:53:35+08:00 ] ::1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0944s ]
+
+[ 2017-03-19T10:27:36+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\MenuController.class.php 第 98 行.
+SQL: UPDATE `cms_menu` SET `name`='121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0007s ]
+
+[ 2017-03-19T10:27:45+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\MenuController.class.php 第 98 行.
+SQL: UPDATE `cms_menu` SET `name`='121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T10:28:51+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+ERR: 1062:Duplicate entry '21' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('121','1','22','1212','1221','1','21')
+ERR: 1062:Duplicate entry '21' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`,`menu_id`) VALUES ('121','1','22','1212','1221','1','21')
+
+[ 2017-03-19T10:31:15+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: UPDATE `cms_menu` SET `name`='121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T10:31:21+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: UPDATE `cms_menu` SET `name`='121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T10:31:57+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: UPDATE `cms_menu` SET `name`='121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T10:32:08+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: UPDATE `cms_menu` SET `name`='121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0007s ]
+
+[ 2017-03-19T10:32:24+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: UPDATE `cms_menu` SET `name`='1211',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0008s ]
+
+[ 2017-03-19T10:34:17+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: UPDATE `cms_menu` SET `name`='1211121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-03-19T10:34:25+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: UPDATE `cms_menu` SET `name`='1211121',`type`='1',`m`='22',`c`='1212',`f`='1221',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T10:34:34+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: UPDATE `cms_menu` SET `name`='1211121',`type`='1',`m`='22',`c`='1212',`f`='122111',`status`='1' WHERE ( menu_id=21 ) [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-03-19T14:14:32+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+DEBUG: 1:value
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 107 行.
+
+[ 2017-03-19T14:14:44+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+DEBUG: 1:value
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\MenuModel.class.php 第 107 行.
+
+[ 2017-03-19T14:15:30+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+DEBUG: 1:value
+
+[ 2017-03-19T14:15:42+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+DEBUG: 1:value
+
+[ 2017-03-19T14:16:36+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:17:31+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:17:54+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:18:01+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:18:24+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:18:28+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:18:29+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:18:30+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:18:40+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:19:02+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:19:18+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+DEBUG: 1:value
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:19:28+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:20:11+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T14:20:46+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0009s ]
+
+[ 2017-03-19T14:20:53+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:21:15+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0005s ]
+
+[ 2017-03-19T14:22:59+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: UPDATE `cms_menu` SET `listorder`='123' WHERE ( menu_id=25 ) [ RunTime:0.0009s ]
+
+[ 2017-03-19T14:23:33+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: UPDATE `cms_menu` SET `listorder`='23' WHERE ( menu_id=25 ) [ RunTime:0.0007s ]
+
+[ 2017-03-19T14:24:14+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='233' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:24:32+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2332' WHERE ( menu_id=0 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:24:53+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=25 ) [ RunTime:0.0007s ]
+
+[ 2017-03-19T14:25:53+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:26:34+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:27:15+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=0 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:27:39+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=16 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=18 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=21 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=25 ) [ RunTime:0.0002s ]
+
+[ 2017-03-19T14:27:45+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=10 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=16 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=18 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=21 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=25 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:29:16+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+
+[ 2017-03-19T14:29:50+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=16 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=21 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=25 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T14:33:41+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=16 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=18 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=21 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=25 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:34:01+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=16 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=18 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=21 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1222' WHERE ( menu_id=24 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T14:35:45+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0007s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=10 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=16 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=18 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='0' WHERE ( menu_id=21 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1222' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:36:14+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=16 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=21 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='45' WHERE ( menu_id=23 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1222' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:38:18+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=16 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=21 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='452' WHERE ( menu_id=23 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1222' WHERE ( menu_id=24 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:38:25+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=16 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=21 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='452' WHERE ( menu_id=23 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1222' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T14:39:28+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=16 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_menu` SET `listorder`='11' WHERE ( menu_id=21 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='452' WHERE ( menu_id=23 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1222' WHERE ( menu_id=24 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T14:40:26+08:00 ] ::1 /admin.php?c=menu
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'menu_id LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT * FROM `cms_menu` WHERE `status` <> '-1' ORDER BY listorder menu_id LIMIT 0,10  
+
+[ 2017-03-19T14:42:53+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=26 ) [ RunTime:0.0011s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=10 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=16 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='11' WHERE ( menu_id=21 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=8 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='12' WHERE ( menu_id=18 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='22' WHERE ( menu_id=9 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='33' WHERE ( menu_id=23 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T14:43:06+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+NOTIC: [8] Undefined index: menu_id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\MenuController.class.php 第 53 行.
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('121','1','12','121','212','1') [ RunTime:0.0008s ]
+
+[ 2017-03-19T14:43:21+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: UPDATE `cms_menu` SET `listorder`='122' WHERE ( menu_id=25 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_menu` SET `listorder`='123' WHERE ( menu_id=24 ) [ RunTime:0.0003s ]
+
+[ 2017-03-19T15:20:11+08:00 ] ::1 /admin.php?c=admin11a=admin11
+ERR: 无法加载控制器:Admin11a=admin11
+
+[ 2017-03-19T15:21:09+08:00 ] ::1 /admin.php?c=menu&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: UPDATE `cms_menu` SET `status`='-1' WHERE ( menu_id=8 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:21:15+08:00 ] ::1 /admin.php?c=menu&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: UPDATE `cms_menu` SET `status`='-1' WHERE ( menu_id=9 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:21:20+08:00 ] ::1 /admin.php?c=menu&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: UPDATE `cms_menu` SET `status`='-1' WHERE ( menu_id=1 ) [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:21:54+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: UPDATE `cms_menu` SET `name`='菜单管理',`type`='1',`m`='admin',`c`='menu',`f`='index',`status`='1' WHERE ( menu_id=10 ) [ RunTime:0.0008s ]
+
+[ 2017-03-19T15:23:19+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+NOTIC: [8] Undefined index: menu_id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\MenuController.class.php 第 53 行.
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('文章管理','1','admin','news','index','1') [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:23:29+08:00 ] ::1 /admin.php?c=menu&a=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: UPDATE `cms_menu` SET `status`='-1' WHERE ( menu_id=9 ) [ RunTime:0.0006s ]
+
+[ 2017-03-19T15:24:13+08:00 ] ::1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+NOTIC: [8] Undefined index: menu_id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\MenuController.class.php 第 53 行.
+SQL: INSERT INTO `cms_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('推荐位管理','1','admin','position','index','1') [ RunTime:0.0007s ]
+
+[ 2017-03-19T15:32:13+08:00 ] ::1 /admin.php?c=news&a=index
+ERR: 无法加载控制器:News
+
+[ 2017-03-19T15:35:58+08:00 ] ::1 /admin.php?c=news&a=index
+ERR: 模板不存在:./Apps/Admin/View/News/index.html
+
+[ 2017-03-19T15:36:45+08:00 ] ::1 /admin.php?c=news&a=index
+ERR: 无法加载控制器:News
+
+[ 2017-03-19T15:37:45+08:00 ] ::1 /admin.php?c=content&a=index
+ERR: 无法加载控制器:Content
+
+[ 2017-03-19T15:43:08+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=28 ) [ RunTime:0.0008s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=29 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T15:47:54+08:00 ] ::1 /admin.php?c=position&a=index
+ERR: 无法加载控制器:Position
+
+[ 2017-03-19T17:12:25+08:00 ] ::1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: UPDATE `cms_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0009s ]
+SQL: UPDATE `cms_menu` SET `listorder`='3' WHERE ( menu_id=29 ) [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `listorder`='2' WHERE ( menu_id=28 ) [ RunTime:0.0004s ]
+
+[ 2017-03-19T17:17:35+08:00 ] ::1 /admin.php?c=image&a=ajaxuploadimage
+ERR: 无法加载控制器:Image
+

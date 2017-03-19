@@ -30,7 +30,7 @@
 	 * type判断
 	 */
 	function getMenuType($data){
-		return $data ===1?"后台菜单":"前端导航";
+		return $data ==1?"后台菜单":"前端导航";
 	}
 
 	function status($data){
@@ -45,4 +45,27 @@
 				$res = '删除';
 		}
 		return $res;
+	}
+
+
+	function getAdminMenuUrl($nav){
+		$url = '/admin.php?c='.$nav['c'].'&a='.$nav['f'];
+		if($nav['c']=='index'){
+			$url = '/admin.php';
+		}
+		return $url;
+	}
+
+	/**
+	 * 菜单栏高亮
+	 * @param $navC
+	 *
+	 * @return string
+	 */
+	function getActive($navC){
+		$c = strtolower(CONTROLLER_NAME);
+		if($c == strtolower($navC)){
+			return 'class = "active"';
+		}
+			return '';
 	}
