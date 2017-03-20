@@ -6,6 +6,8 @@
 			$this->display();
 		}
 		public function add(){
+			$res = D('Menu')->getBarMenus();
+			$res =
 			$this->display();
 		}
 	}

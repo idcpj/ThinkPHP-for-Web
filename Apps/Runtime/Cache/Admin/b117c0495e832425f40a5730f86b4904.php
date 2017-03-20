@@ -85,7 +85,7 @@
   </div>
   <!-- /.navbar-collapse -->
 </nav>
-  <script src="/Public/js/kindeditor/kindeditor-all.js"></script>
+  <script src="/Public/js/kindeditor/kindeditor-all-min.js"></script>
   <div id="page-wrapper">
 
     <div class="container-fluid">
@@ -213,7 +213,7 @@
   // 6.2
   KindEditor.ready(function(K) {
     window.editor = K.create('#editor_singcms',{
-      uploadJson : '/admin.php?c=image&a=kindupload',
+      uploadJson : '/admin.php?c=image&a=kindupload',//上传图片接口
       afterBlur : function(){this.sync();}, //
     });
   });

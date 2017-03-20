@@ -5,7 +5,7 @@
 	$STATIC_METHOD_TYPES = [
 
 		\D('') => [
-			'News' instanceof Common\Model\NewsModel,
+			'UploadImage' instanceof Common\Model\UploadImageModel,
 			'Menu' instanceof Common\Model\MenuModel,
 			'Adv' instanceof Think\Model\AdvModel,
 			'Mongo' instanceof Think\Model\MongoModel,

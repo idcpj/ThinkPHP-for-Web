@@ -19,16 +19,35 @@
 			$this->ceateDir();
 		}
 
+		/**上传缩略图
+		 * @return string
+		 */
 		public function imageUpload(){
+			//调用tp自带函数
 			$res =$this->_uploadObj->upload();
 			if(is_array($res)){
 				return APP_PATH.self::UPLOAD.'/'.$res['file']['savepath'].$res['file']['savename'];
 			}else{
-
 				throw_exception($this->_uploadObj->getError());
 			}
 		}
 
+		/**
+		 * 上传编辑器图片
+		 * @return string
+		 */
+		public function upload(){
+			$res =$this->_uploadObj->upload();
+			if($res ==false){
+				return false;
+			}else{
+				return APP_PATH.self::UPLOAD.'/'.$res['imgFile']['savepath'].$res['imgFile']['savename'];
+			}
+		}
+
+		/**
+		 * 创建目录
+		 */
 		public function ceateDir(){
 			$dir=APP_PATH.self::UPLOAD.'/'.date(Y).'/'.date(m).'/'.date(d);
 			if(!is_dir($dir)){
