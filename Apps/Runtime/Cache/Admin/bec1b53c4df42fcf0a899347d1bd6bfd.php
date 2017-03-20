@@ -108,13 +108,15 @@
         <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
       </div>
       <div class="row">
-        <form action="/admin.php" method="get">
+        <form action="/admin.php?c=content" method="get">
           <div class="col-md-3">
             <div class="input-group">
               <span class="input-group-addon">栏目</span>
               <select class="form-control" name="catid">
                 <option value='' >全部分类</option>
-                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" ><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
+
+                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" <?php if($catid == $sitenav['menu_id']): ?>selected="selected"<?php endif; ?> ><?php echo ($sitenav["name"]); ?> </option><?php endforeach; endif; ?>
+
               </select>
             </div>
           </div>
@@ -156,14 +158,15 @@
                     <td><input size=4 type='text'  name='listorder[<?php echo ($new["news_id"]); ?>]' value="<?php echo ($new["listorder"]); ?>"/></td><!--6.7-->
                     <td><?php echo ($new["news_id"]); ?></td>
                     <td><?php echo ($new["title"]); ?></td>
-                    <td><?php echo (getCatName($webSiteMenu,$new["catid"])); ?></td>
-                    <td><?php echo (getCopyFromById($new["copyfrom"])); ?></td>
+                    <td><?php echo (getMenuName($new["catid"])); ?></td>
+                    <td><?php echo (getconyFrom($new["copyfrom"])); ?></td>
                     <td>
-                      <?php echo (isThumb($new["thumb"])); ?>
+                      <?php echo (getThumb($new["thumb"])); ?>
                     </td>
-                    <td><?php echo (date("Y-m-d H:i",$new["create_time"])); ?></td>
-                    <td><span  attr-status="<?php if($new['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($new["status"])); ?></span></td>
-                    <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($new["news_id"]); ?>" ></span>
+                    <td><?php echo (date('Y-m-d H:m:s',$new["create_time"])); ?></td>
+                    <td><span  attr-status=""  attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($new["status"])); ?></span></td>
+                    <td>
+                        <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($new["news_id"]); ?>" ></span>
                       <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($new["news_id"]); ?>"  attr-message="删除">
                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
                       </a>

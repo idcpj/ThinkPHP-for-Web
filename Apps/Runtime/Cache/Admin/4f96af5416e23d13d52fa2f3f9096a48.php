@@ -22,8 +22,8 @@
 
     <!-- Custom Fonts -->
     <link href="/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/Public/css/sing/common.css" />
-    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css" />
+    <link rel="stylesheet" href="/Public/css/sing/common.css"/>
+    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css"/>
     <link rel="stylesheet" type="text/css" href="/Public/css/party/uploadify.css">
 
     <!-- jQuery -->

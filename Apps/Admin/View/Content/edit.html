@@ -53,9 +53,11 @@
               <div class="col-sm-5">
                 <select class="form-control" name="title_font_color">
                   <option value="">==请选择颜色==</option>
+
                     <foreach name="titleFontColor" item="color">
                       <option value="{$key}" <if condition="$key eq $news['title_font_color']">selected="selected"</if>>{$color}</option>
                     </foreach>
+
                 </select>
               </div>
             </div>

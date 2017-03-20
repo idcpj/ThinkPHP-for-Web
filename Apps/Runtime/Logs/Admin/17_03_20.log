@@ -95,3 +95,430 @@ ERR: 无法加载数据库驱动: Think\Db\Driver\
 [ 2017-03-20T13:07:35+08:00 ] ::1 /admin.php
 ERR: 无法加载数据库驱动: Think\Db\Driver\
 
+[ 2017-03-20T14:05:48+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003924s ]
+
+[ 2017-03-20T14:05:55+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004018s ]
+
+[ 2017-03-20T14:06:33+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003787s ]
+
+[ 2017-03-20T14:07:21+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001609s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1112s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test','test','./Apps/upload/2017/03/20/58cf71226aeec.jpg','#5674ed','30','阿韦打我','啊啊无法','1489990041','admin') [ RunTime:0.0011s ]
+ERR: 1146:Table 'thinkphp.cms_new_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_new_content`
+ERR: 1146:Table 'thinkphp.cms_new_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_new_content`
+
+[ 2017-03-20T14:07:26+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test','test','./Apps/upload/2017/03/20/58cf71226aeec.jpg','#5674ed','30','阿韦打我','啊啊无法','1489990045','admin') [ RunTime:0.0004s ]
+ERR: 1146:Table 'thinkphp.cms_new_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_new_content`
+ERR: 1146:Table 'thinkphp.cms_new_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_new_content`
+
+[ 2017-03-20T14:07:30+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test','test','./Apps/upload/2017/03/20/58cf71226aeec.jpg','#5674ed','30','阿韦打我','啊啊无法','1489990049','admin') [ RunTime:0.0008s ]
+ERR: 1146:Table 'thinkphp.cms_new_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_new_content`
+ERR: 1146:Table 'thinkphp.cms_new_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_new_content`
+
+[ 2017-03-20T14:07:53+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test','test','./Apps/upload/2017/03/20/58cf71226aeec.jpg','#5674ed','30','阿韦打我','啊啊无法','1489990072','admin') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0881s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('阿娥飞飞啊<img src=\"/Apps/upload/2017/03/20/58cf7136ed010.jpg\" alt=\"\" />','4','1489990073') [ RunTime:0.0004s ]
+
+[ 2017-03-20T15:59:12+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+
+[ 2017-03-20T15:59:16+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+
+[ 2017-03-20T15:59:25+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','1489996764','admin') [ RunTime:0.0009s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('ascas','5','1489996765') [ RunTime:0.0005s ]
+
+[ 2017-03-20T16:21:15+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+
+[ 2017-03-20T16:21:20+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('我们铣挖机在某隧道里施工，能精确，细致的勾勒出形状来','asd','./Apps/upload/2017/03/20/58cf90fe0904e.jpg','#5674ed','31','1','asd','sadasd','1489998079','admin') [ RunTime:0.0011s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('asdsad','6','1489998080') [ RunTime:0.0016s ]
+
+[ 2017-03-20T17:49:51+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('高效开采隧道的办法,你知道吗?','123','./Apps/upload/2017/03/20/58cfa5b8c46b3.jpg','#5674ed','31','1','213','12321','1490003390','admin') [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('213213','7','1490003391') [ RunTime:0.0007s ]
+
+[ 2017-03-20T17:59:16+08:00 ] ::1 /admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 8 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 11 行.
+NOTIC: [8] Undefined index: catid D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 44 行.
+SQL: SELECT * FROM `cms_news` ORDER BY listorder ,news_id LIMIT 3,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( menu_id=31 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: positions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Runtime\Cache\Admin\bec1b53c4df42fcf0a899347d1bd6bfd.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-20T17:59:18+08:00 ] ::1 /admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 8 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 11 行.
+NOTIC: [8] Undefined index: catid D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 44 行.
+SQL: SELECT * FROM `cms_news` ORDER BY listorder ,news_id LIMIT 3,3   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( menu_id=31 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: positions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Runtime\Cache\Admin\bec1b53c4df42fcf0a899347d1bd6bfd.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2017-03-20T17:59:20+08:00 ] ::1 /admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 8 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 11 行.
+NOTIC: [8] Undefined index: catid D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 44 行.
+SQL: SELECT * FROM `cms_news` ORDER BY listorder ,news_id LIMIT 3,3   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( menu_id=31 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: positions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Runtime\Cache\Admin\bec1b53c4df42fcf0a899347d1bd6bfd.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002270s ]
+
+[ 2017-03-20T17:59:23+08:00 ] ::1 /admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 8 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 11 行.
+NOTIC: [8] Undefined index: catid D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 44 行.
+SQL: SELECT * FROM `cms_news` ORDER BY listorder ,news_id LIMIT 3,3   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( menu_id=31 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: positions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Runtime\Cache\Admin\bec1b53c4df42fcf0a899347d1bd6bfd.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-03-20T17:59:31+08:00 ] ::1 /admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 8 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 11 行.
+NOTIC: [8] Undefined index: catid D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 44 行.
+SQL: SELECT * FROM `cms_news` ORDER BY listorder ,news_id LIMIT 3,3   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: conditions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( menu_id=31 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: positions D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Runtime\Cache\Admin\bec1b53c4df42fcf0a899347d1bd6bfd.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2017-03-20T18:04:03+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+
+[ 2017-03-20T18:04:42+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('27.恩特无人驾驶挖机锯采石料','d','./Apps/upload/2017/03/20/58cfa90bcf6fa.jpg','#5674ed','30','0','wqd ','dqw d','1490004281','admin') [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('w d','8','1490004282') [ RunTime:0.0005s ]
+
+[ 2017-03-20T20:20:50+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012449','admin')
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012449','admin')
+
+[ 2017-03-20T20:20:54+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012453','admin')
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012453','admin')
+
+[ 2017-03-20T20:20:55+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012454','admin')
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012454','admin')
+
+[ 2017-03-20T20:24:53+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001687s ]
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012692','admin')
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012692','admin')
+
+[ 2017-03-20T20:24:58+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012697','admin')
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012697','admin')
+
+[ 2017-03-20T20:27:46+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 36 行.
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012865','admin')
+ERR: 1062:Duplicate entry '5' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`news_id`,`create_time`,`username`) VALUES ('ccc','cc','./Apps/upload/2017/03/20/58cf8bd37c9d6.jpg','#5674ed','30','1','ascas','casc','5','1490012865','admin')
+
+[ 2017-03-20T20:33:53+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8] Undefined index: news_id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 36 行.
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('12321','123213','','#5674ed','30','0','213','21312','1490013232','admin') [ RunTime:0.0122s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('123213','9','1490013233') [ RunTime:0.0006s ]
+
+[ 2017-03-20T20:36:46+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-03-20T20:36:56+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2017-03-20T20:37:16+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+
+[ 2017-03-20T20:38:25+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+
+[ 2017-03-20T20:40:48+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: news_id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 47 行.
+
+[ 2017-03-20T20:40:56+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: news_id D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Admin\Controller\ContentController.class.php 第 47 行.
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('1212121','21','','#5674ed','30','0','121','2121','1490013656','admin') [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('1212','10','1490013656') [ RunTime:0.0008s ]
+
+[ 2017-03-20T20:42:14+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0010s ]
+
+[ 2017-03-20T20:44:46+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0004s ]
+
+[ 2017-03-20T20:48:56+08:00 ] ::1 /admin.php?c=content&a=edit&id=7
+ERR: Think\Model:newsEdit方法不存在！
+
+[ 2017-03-20T20:49:01+08:00 ] ::1 /admin.php?c=content&a=edit&id=7
+ERR: Think\Model:newsEdit方法不存在！
+
+[ 2017-03-20T20:53:16+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder,menu_id   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2017-03-20T21:03:16+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-03-20T21:03:46+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0010s ]
+SQL: UPDATE `cms_news` SET `title`='test',`small_title`='test',`thumb`='./Apps/upload/2017/03/20/58cf71226aeec.jpg',`title_font_color`='#5674ed',`catid`='30',`copyfrom`='0',`description`='阿韦打我1',`keywords`='啊啊无法' WHERE ( news_id=1 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='阿娥飞飞啊<img src=\"/Apps/upload/2017/03/20/58cf7136ed010.jpg\" alt=\"\" />' WHERE ( news_id=1 ) [ RunTime:0.0002s ]
+
+[ 2017-03-20T21:04:25+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 0 ORDER BY listorder ,menu_id   [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news` SET `title`='test1111111111111111',`small_title`='test1111111111111111',`thumb`='./Apps/upload/2017/03/20/58cf71226aeec.jpg',`title_font_color`='#ed568b',`catid`='31',`copyfrom`='1',`description`='test1111111111111111',`keywords`='test1111111111111111' WHERE ( news_id=1 ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='阿娥飞飞啊<img src=\"/Apps/upload/2017/03/20/58cf7136ed010.jpg\" alt=\"\" />test1111111111111111' WHERE ( news_id=1 ) [ RunTime:0.0004s ]
+

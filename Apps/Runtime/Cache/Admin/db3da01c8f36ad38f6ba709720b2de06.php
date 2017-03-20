@@ -115,7 +115,7 @@
                             <option value=''>请选择类型</option>
 
                             <option value="1" <?php if($type == 1): ?>selected="selected"<?php endif; ?> >后台菜单</option>
-                            <option value="0" <?php if($type == 0): ?>selected="selected"<?php endif; ?>>前端导航</option>
+                            <option value="0" <?php if($type == 0): ?>selected="selected"<?php endif; ?> >前端导航</option>
                         <lect>
                     </div>
 
