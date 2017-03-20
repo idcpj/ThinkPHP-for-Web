@@ -133,13 +133,21 @@
 
 		}
 
+		/**
+		 * 获取前台栏目
+		 * @return string
+		 */
 		public function getBarMenus(){
 			$data = array(
 				'status'=>array('neq',-1),
 				'type'=>0.
 			);
-			$res = $this->_db->where($data)->order('listorder ,menu+id ')->select();
-			return $res;
+			$res = $this->_db->where($data)->order('listorder ,menu_id ')->select();
+			if($res ===false){
+				return "查询出错";
+			}else{
+				return $res;
+			}
 		}
 
 	}

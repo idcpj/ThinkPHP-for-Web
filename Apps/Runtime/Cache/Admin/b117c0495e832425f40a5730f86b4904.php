@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>sing后台管理平台</title>
+    <title>后台管理平台</title>
     <!-- Bootstrap Core CSS -->
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,8 +21,8 @@
 
     <!-- Custom Fonts -->
     <link href="/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/Public/css/sing/common.css" />
-    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css" />
+    <link rel="stylesheet" href="/Public/css/sing/common.css"/>
+    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css"/>
     <link rel="stylesheet" type="text/css" href="/Public/css/party/uploadify.css">
 
     <!-- jQuery -->
@@ -48,14 +48,14 @@
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
 
-    <a class="navbar-brand" >singcms内容管理平台</a>
+    <a class="navbar-brand" >内容管理平台</a>
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
 
 
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo session('adminUser')['username']?><i class="fa fa-user"></i>  <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ($_SESSION['adminUser']['username']); ?><i class="fa fa-user"></i>  <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
@@ -135,7 +135,7 @@
               <div class="col-sm-5">
                 <select class="form-control" name="title_font_color">
                   <option value="">==请选择颜色==</option>
-                    <?php if(is_array($titleFontColor)): foreach($titleFontColor as $key=>$color): ?><option value="<?php echo ($key); ?>"><?php echo ($color); ?></option><?php endforeach; endif; ?>
+                  <?php if(is_array($titleFontColor)): foreach($titleFontColor as $key=>$color): ?><option value="<?php echo ($key); ?>"><?php echo ($color); ?></option><?php endforeach; endif; ?>
                 </select>
               </div>
             </div>
@@ -143,7 +143,6 @@
               <label for="inputname" class="col-sm-2 control-label">所属栏目:</label>
               <div class="col-sm-5">
                 <select class="form-control" name="catid">
-
                   <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>"><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
                 </select>
               </div>
@@ -152,8 +151,8 @@
             <div class="form-group">
               <label for="inputname" class="col-sm-2 control-label">来源:</label>
               <div class="col-sm-5">
-                <select class="form-control" name="copyfrom">
-                  <?php if(is_array($copyfrom)): foreach($copyfrom as $key=>$cfrom): ?><option value="<?php echo ($key); ?>"><?php echo ($cfrom); ?></option><?php endforeach; endif; ?>
+                <select class="form-control" name="copyFrom">
+                  <?php if(is_array($copyFrom)): foreach($copyFrom as $key=>$cfrom): ?><option value="<?php echo ($key); ?>"><?php echo ($cfrom); ?></option><?php endforeach; endif; ?>
                 </select>
               </div>
             </div>

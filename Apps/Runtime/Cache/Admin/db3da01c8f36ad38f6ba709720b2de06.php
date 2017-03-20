@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>sing后台管理平台</title>
+    <title>后台管理平台</title>
     <!-- Bootstrap Core CSS -->
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,8 +21,8 @@
 
     <!-- Custom Fonts -->
     <link href="/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/Public/css/sing/common.css" />
-    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css" />
+    <link rel="stylesheet" href="/Public/css/sing/common.css"/>
+    <link rel="stylesheet" href="/Public/css/party/bootstrap-switch.css"/>
     <link rel="stylesheet" type="text/css" href="/Public/css/party/uploadify.css">
 
     <!-- jQuery -->
@@ -49,14 +49,14 @@
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
 
-    <a class="navbar-brand" >singcms内容管理平台</a>
+    <a class="navbar-brand" >内容管理平台</a>
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
 
 
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo session('adminUser')['username']?><i class="fa fa-user"></i>  <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ($_SESSION['adminUser']['username']); ?><i class="fa fa-user"></i>  <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
