@@ -44,6 +44,7 @@
 		public function update($news_id,$data){
 			if(is_numeric($news_id) && $data['content']){
 				$content['content'] =$data['content'];
+				$content['update_time']=time();
 				return $this->_db->where('news_id='.$news_id)->save($content);
 			}
 		}

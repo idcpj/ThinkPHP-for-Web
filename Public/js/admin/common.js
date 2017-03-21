@@ -8,8 +8,8 @@ $('#button-add').click(function () {
 });
 
 /*
- *add from
- * 提交form操作
+ *
+ * 添加
  * */
 $('#singcms-button-submit').click(function () {
     //data为二维对象
@@ -29,8 +29,8 @@ $('#singcms-button-submit').click(function () {
     }, 'JSON')
 });
 
-/**
- 跳转到编辑菜单
+/*
+ * 跳转到编辑菜单
  */
 $('.singcms-table #singcms-edit').on('click',function (event) {
     event.preventDefault(); //阻止默认时间,否则需要点击两次跳转;
@@ -60,13 +60,17 @@ $('.singcms-table #singcms-delete').click(function () {
     });
 });
 
-
+/**
+ * 删除记录
+ * @param url
+ * @param data
+ */
 function delByMenuId(url,data){
     $.post(url,data,function(result){
         if (result.status ==1){
-            dialog.success(result.message,'/admin.php?c=menu');
+            dialog.success(result.message,result.data['url']);
         }else if (result.status == 0 ){
-            dialog.success(result.message,'/admin.php?c=menu');
+            dialog.error(result.message,result.data['url']);
         }
     },'JSON');
 }
@@ -81,14 +85,70 @@ $('#button-listorder').click(function(){
     $(data).each(function (i) {
         postData[this.name] = this.value;
     });
-
     var url = SCOPE.listorder_url;
     $.post(url, postData, function (result) {
         if (result.status === 1) {
-           return dialog.success(result.message,result['data']['jumpUrl']);
+            return dialog.success(result.message, result['data']['jumpUrl']);
         } else if (result.status === 0) {
             return dialog.error(result.message,result['data']['jumpUrl']);
         }
     }, 'JSON')
 
 });
+
+/*
+ * 更改新闻状态
+ * */
+$('.singcms-table #singcms-on-off').click(function () {
+    var id = $(this).attr('attr-id');
+    var url = SCOPE.del_url;
+    var status = $(this).attr('attr-status');
+    if( status===1){
+        status=0;
+        var content='是否隐藏';
+    }else{
+        status=1;
+        var content='是否显示';
+    }
+    var data = {};
+    data['id']=id;
+    data['status']=status;
+
+    layer.open({
+        content : content,
+        icon:3,
+        btn : ['是','否'],
+        yes : function(){
+            delByMenuId(url,data);
+        },
+    });
+});
+
+
+//推送
+$('#singcms-push').click(function () {
+   var position_id = $('#select-push').val();
+   var data={};
+   var postData={};
+   if (!position_id){
+       dialog.error('请选择推荐位');
+   }
+
+   $('input[name="pushcheck"]:checked').each(function (i) {
+       data[i]=this.value;
+   })
+    postData['position_id']=position_id;
+    postData['data']=data;
+    var url = SCOPE.push_url;
+
+    console.log(postData);
+    $.post(url,postData,function(result){
+        if (result.status ===1){
+            dialog.success(result.message,result.url);
+        }else if (result.status ===0){
+            dialog.error(result.message,result.url);
+        }
+    },'JSON');
+
+
+})

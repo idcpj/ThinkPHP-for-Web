@@ -154,7 +154,7 @@
                 </thead>
                 <tbody>
                 <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><tr>
-                    <td><input type="checkbox" name="pushcheck" value="<?php echo ($new["news_id"]); ?>"></td>
+                    <td><input id ='check_id' type="checkbox" name="pushcheck" value="<?php echo ($new["news_id"]); ?>" ></td>
                     <td><input size=4 type='text'  name='listorder[<?php echo ($new["news_id"]); ?>]' value="<?php echo ($new["listorder"]); ?>"/></td><!--6.7-->
                     <td><?php echo ($new["news_id"]); ?></td>
                     <td><?php echo ($new["title"]); ?></td>
@@ -164,7 +164,7 @@
                       <?php echo (getThumb($new["thumb"])); ?>
                     </td>
                     <td><?php echo (date('Y-m-d H:m:s',$new["create_time"])); ?></td>
-                    <td><span  attr-status=""  attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($new["status"])); ?></span></td>
+                    <td><span  attr-status="<?php echo ($news["status"]); ?>"  attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($new["status"])); ?></span></td>
                     <td>
                         <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($new["news_id"]); ?>" ></span>
                       <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($new["news_id"]); ?>"  attr-message="删除">
@@ -188,9 +188,10 @@
                 <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
               </div>
             </form>
+
             <div class="input-group">
               <select class="form-control" name="position_id" id="select-push">
-                <option value="0">请选择推荐位进行推送</option>
+                <option value="">请选择推荐位进行推送</option>
                 <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>"><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
               </select>
               <button id="singcms-push" type="button" class="btn btn-primary">推送</button>
@@ -216,6 +217,7 @@
   var SCOPE = {
     'edit_url' : '/admin.php?c=content&a=edit',
     'add_url' : '/admin.php?c=content&a=add',
+    'del_url' :'/admin.php?c=content&a=del',
     'set_status_url' : '/admin.php?c=content&a=setStatus',
     'sing_news_view_url' : '/index.php?c=view',
     'listorder_url' : '/admin.php?c=content&a=listorder',

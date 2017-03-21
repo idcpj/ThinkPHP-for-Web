@@ -1,11 +1,10 @@
 <?php
 	namespace Admin\Controller;
+	use Think\Exception;
 	use Think\Page;
 
 	class ContentController extends CommonController
 	{
-
-
 		public function index(){
 			if($_GET['title']){
 				$conds['title']=$_GET['title'];
@@ -21,12 +20,14 @@
 
 			$news = D('News')->getNews($conds,$page,$pageSize);
 			$count =D('News')->getNewsCount($conds);
-			$pages = (new Page($count,$pageSize))->show();
-			$webSiteMenu = D('Menu')->getBarMenus();
+			$pageres = (new Page($count,$pageSize))->show();
+			$posittions = D('Position')->getNormalPositions();
+			$this->getInfo();
 
-			$this->assign('webSiteMenu',$webSiteMenu);
+
 			$this->assign('news',$news);
-			$this->assign('pageres',$pages);
+			$this->assign('positions',$posittions);
+			$this->assign('pageres',$pageres);
 			$this->display();
 		}
 
@@ -35,16 +36,6 @@
 		 * 添加提交
 		 */
 		public function add(){
-			//获取前台菜单
-			$webSiteMenu = D('Menu')->getBarMenus();
-			//获取来源config
-			$copyFrom = C("COPY_FROM");
-			//获取标签颜色
-			$titleFontColor = C('TITLE_FONT_COLOR');
-
-			$this->assign('webSiteMenu',$webSiteMenu);
-			$this->assign('titleFontColor',$titleFontColor);
-			$this->assign('copyfrom',$copyFrom);
 
 			//判断是来自添加还是修改
 			if($_POST && !$_POST['news_id']){
@@ -82,7 +73,7 @@
 				//修改新闻
 				$news_id = D('News')->update($_POST);
 				if($news_id !=false ){
-					$id = D('NewsContent')->update($news_id,$_POST);
+					$id = D('NewsContent')->update($_POST['news_id'],$_POST);
 					if(is_numeric($id)){
 						return show(1, '更新成功');
 					}else{
@@ -91,6 +82,7 @@
 				}
 			}
 
+			$this->getInfo();
 			$this->display();
 		}
 
@@ -104,14 +96,98 @@
 					$news['content'] = D('NewsContent')->contentEdit($_GET['id'])['content'];
 				}
 			}
-			$title_font_color = C('TITLE_FONT_COLOR');
-			$webSiteMenu =D('Menu')->getBarMenus();
-			$copyfrom =C('COPY_FROM');
 
-			$this->assign('titleFontColor',$title_font_color);
+			$this->getInfo();
 			$this->assign('news',$news);
-			$this->assign('webSiteMenu',$webSiteMenu);
-			$this->assign('copyfrom',$copyfrom);
 			$this->display();
 		}
+
+		/**
+		 * 删除或更改显示或关闭
+		 */
+		public function del(){
+			$data['url']='/admin.php?c=content';
+
+			if($_POST && $_POST['id']){
+				$news_id = D('News')->delNews($_POST);
+				if(is_numeric($news_id)){
+					return show(1, '操作成功',$data);
+				}else{
+					return show(0,'操作失败',$data);
+				}
+			}else{
+				return show(0,'操作失败',$data);
+			}
+		}
+
+		/**
+		 * 排序
+		 */
+		public function listorder(){
+			//跳转到返回页
+			$data['jumpUrl']=$_SERVER['HTTP_REFERER'];
+
+			if($_POST['listorder'] && is_array($_POST));
+			$post =$_POST['listorder'];
+			$error=[];
+			try{
+				foreach( $post as $newsId=>$v){
+					$res = D('News')->newsOrder($newsId,$v);
+					if($res ===false){
+						$error[]= $newsId;
+					}
+				}
+			}catch(Exception $e){
+				return show(0, $e->getMessage(),$data);
+			}
+			if(empty($error)){
+				return show(1,'排列成功',$data);
+			}else{
+				return show(0, "排列失败",$data);
+			}
+
+		}
+
+
+		//获取option的值
+		private function getInfo(){
+			////获取前台菜单
+			$webSiteMenu = D('Menu')->getBarMenus();
+			//获取来源config
+			$copyFrom = C("COPY_FROM");
+			//获取标签颜色
+			$titleFontColor = C('TITLE_FONT_COLOR');
+
+			$this->assign('webSiteMenu',$webSiteMenu);
+			$this->assign('titleFontColor',$titleFontColor);
+			$this->assign('copyfrom',$copyFrom);
+		}
+
+		//推荐位
+		public function push(){
+			$data['url'] =$_SERVER['HTTP_REFERER'];
+			if(is_array($_POST) && $_POST['data'] && $_POST['position_id']){
+				//获取新闻
+				foreach($_POST['data'] as $key=>$newsId){
+
+					$news=D('News')->getNewsById($newsId);
+					//判断获取新闻成功
+					if($news!=false){
+						$news['position_id']=intval($_POST['position_id']);
+						//把新闻放如推荐位
+						$res = D('Positioncontent')->insert($news);
+						if($res){
+							return show(1,"推送失败",$data);
+						}else{
+							return show(0,'推送失败',$data);
+						}
+					}else{
+						return show(0,'推送失败',$data);
+					}
+				}
+			}else{
+				return show(0,'推送失败,没有推送内容',$data);
+			}
+		}
+
 	}

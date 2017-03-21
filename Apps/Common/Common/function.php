@@ -44,7 +44,7 @@
 				$res = '显示';
 				break;
 			case 0:
-				$res = '关闭';
+				$res = '隐藏';
 				break;
 			default:
 				$res = '删除';
