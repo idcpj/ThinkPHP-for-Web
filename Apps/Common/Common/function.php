@@ -1,9 +1,11 @@
 <?php
+
+	function test($var){
+		dump($var);
+		exit();
+	}
 	/**
 	 *  AJAX返回函数
-	 * @param      $status
-	 * @param      $message
-	 * @param null $data
 	 */
 	function show($status, $message, $data = null)
 	{

@@ -107,11 +107,12 @@
         </div>
 
         <div class="row">
-            <form action="/admin.php" method="get">
+            <form action="/admin.php?c=positioncontent" method="get">
                 <div class="col-md-3">
                     <div class="input-group">
                         <span class="input-group-addon">推荐位</span>
                         <select class="form-control" name="position_id">
+                            <option value="">选择过滤推荐位</option>
                             <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>"<?php if($position['id'] == $positionId): ?>selected="selected"<?php endif; ?> ><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </div>
@@ -152,9 +153,9 @@
                                 <td><?php echo ($vo["id"]); ?></td>
                                 <td><?php echo ($vo["title"]); ?></td>
                                 <td><?php echo (date("y-m-d H:i",$vo["create_time"])); ?></td>
-                                <td><?php echo (isThumb($vo["thumb"])); ?></td>
+                                <td><?php echo (getThumb($vo["thumb"])); ?></td>
                                 <td>
-                                    <span  attr-status="<?php if($vo['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="<?php echo ($vo["id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span>
+                                    <span  attr-status="<?php echo ($vo["status"]); ?>"  attr-id="<?php echo ($vo["id"]); ?>" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span>
                                 </td>
                                 <td>
                                     <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($vo["id"]); ?>" ></span>
@@ -167,6 +168,10 @@
                         </tbody>
                     </table>
                     </from>
+                        <!--分页-->
+                        <div>
+                            <?php echo ($pages); ?>
+                        </div>
                     <div>
                         <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
                     </div>
@@ -189,6 +194,7 @@
 <script>
     var SCOPE = {
         'edit_url' : '/admin.php?c=positioncontent&a=edit',
+        'del_url' : '/admin.php?c=positioncontent&a=del',
         'set_status_url' : '/admin.php?c=positioncontent&a=setStatus',
         'add_url' : '/admin.php?c=positioncontent&a=add',
         'listorder_url' : '/admin.php?c=positioncontent&a=listorder',

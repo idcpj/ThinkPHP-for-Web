@@ -1,5 +1,8 @@
 <?php
 	namespace Admin\Controller;
+	use Common\Model\NewsModel;
+	use Common\Model\Position_contentModel;
+	use Common\Model\PositionContentModel;
 	use Think\Exception;
 	use Think\Page;
 
@@ -21,12 +24,12 @@
 			$news = D('News')->getNews($conds,$page,$pageSize);
 			$count =D('News')->getNewsCount($conds);
 			$pageres = (new Page($count,$pageSize))->show();
-			$posittions = D('Position')->getNormalPositions();
+			$positions = D('Position')->getNormalPositions();
 			$this->getInfo();
 
 
 			$this->assign('news',$news);
-			$this->assign('positions',$posittions);
+			$this->assign('positions',$positions);
 			$this->assign('pageres',$pageres);
 			$this->display();
 		}
@@ -166,6 +169,7 @@
 		//推荐位
 		public function push(){
 			$data['url'] =$_SERVER['HTTP_REFERER'];
+
 			if(is_array($_POST) && $_POST['data'] && $_POST['position_id']){
 				//获取新闻
 				foreach($_POST['data'] as $key=>$newsId){
@@ -175,16 +179,15 @@
 					if($news!=false){
 						$news['position_id']=intval($_POST['position_id']);
 						//把新闻放如推荐位
-						$res = D('Positioncontent')->insert($news);
-						if($res){
-							return show(1,"推送失败",$data);
-						}else{
+						$res = D('PositionContent')->insert($news);
+						if($res ===false){
 							return show(0,'推送失败',$data);
 						}
 					}else{
 						return show(0,'推送失败',$data);
 					}
 				}
+				return show(1,"推送成功",$data);
 			}else{
 				return show(0,'推送失败,没有推送内容',$data);
 			}

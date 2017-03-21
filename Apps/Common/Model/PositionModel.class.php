@@ -8,10 +8,7 @@ class PositionModel extends \Think\Model{
 		$this->_db=M('Position');
 	}
 
-	/**
-	 * 获取正常位的推荐内容
-	 * @return mixed
-	 */
+	//获取未删除推荐位
 	public function getNormalPositions(){
 		$conditions = array('status'=>1);
 		$list= $this->_db->where($conditions)->select();
@@ -40,4 +37,6 @@ class PositionModel extends \Think\Model{
 			return false;
 		}
 	}
+
+
 }

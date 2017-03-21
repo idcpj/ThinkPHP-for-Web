@@ -60,7 +60,7 @@
 				$conditions['catid'] = intval($data['catid']);
 			}
 
-			$conds['status'] = array('neq',-1);
+			$conditions['status'] = array('neq',-1);
 
 			$res= $this->_db->where($conditions)->count();
 			return $res;

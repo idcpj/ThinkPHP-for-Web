@@ -1,6 +1,6 @@
 /*
  * 添加按钮操作
- * 可以服用
+ * 可以按钮
  * */
 $('#button-add').click(function () {
     var url = SCOPE.add_url;
@@ -8,8 +8,8 @@ $('#button-add').click(function () {
 });
 
 /*
- *
- * 添加
+ *提交按钮
+ * 添加,更改
  * */
 $('#singcms-button-submit').click(function () {
     //data为二维对象
@@ -61,9 +61,7 @@ $('.singcms-table #singcms-delete').click(function () {
 });
 
 /**
- * 删除记录
- * @param url
- * @param data
+ * 删除记录函数
  */
 function delByMenuId(url,data){
     $.post(url,data,function(result){
@@ -97,18 +95,19 @@ $('#button-listorder').click(function(){
 });
 
 /*
- * 更改新闻状态
+ * 更改状态
  * */
 $('.singcms-table #singcms-on-off').click(function () {
     var id = $(this).attr('attr-id');
     var url = SCOPE.del_url;
     var status = $(this).attr('attr-status');
-    if( status===1){
+    var content;
+    if( status==1){
         status=0;
-        var content='是否隐藏';
-    }else{
+        content='是否隐藏';
+    }else if(status==0){
         status=1;
-        var content='是否显示';
+        content='是否显示';
     }
     var data = {};
     data['id']=id;
@@ -144,9 +143,9 @@ $('#singcms-push').click(function () {
     console.log(postData);
     $.post(url,postData,function(result){
         if (result.status ===1){
-            dialog.success(result.message,result.url);
+            dialog.success(result.message,result['data']['url']);
         }else if (result.status ===0){
-            dialog.error(result.message,result.url);
+            dialog.error(result.message,result['data']['url']);
         }
     },'JSON');
 

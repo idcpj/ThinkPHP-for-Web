@@ -25,11 +25,12 @@
         </div>
 
         <div class="row">
-            <form action="/admin.php" method="get">
+            <form action="/admin.php?c=positioncontent" method="get">
                 <div class="col-md-3">
                     <div class="input-group">
                         <span class="input-group-addon">推荐位</span>
                         <select class="form-control" name="position_id">
+                            <option value="">选择过滤推荐位</option>
                             <foreach name="positions" item="position">
                                 <option value="{$position.id}"<if condition="$position['id'] eq $positionId">selected="selected"</if> >{$position.name}</option>
                             </foreach>
@@ -67,15 +68,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                            <volist name="contents" id="vo">
+                            <volist name="contents" id="vo" >
                             <tr>
                                 <td><input size=4 type='text'  name='listorder[{$vo.id}]' value="{$vo.listorder}"/></td>
                                 <td>{$vo.id}</td>
                                 <td>{$vo.title}</td>
                                 <td>{$vo.create_time|date="y-m-d H:i",###}</td>
-                                <td>{$vo.thumb|isThumb}</td>
+                                <td>{$vo.thumb|getThumb}</td>
                                 <td>
-                                    <span  attr-status="<if condition="$vo['status'] eq 1">0<else/>1</if>"  attr-id="{$vo.id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$vo.status|status}</span>
+                                    <span  attr-status="{$vo.status}"  attr-id="{$vo.id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$vo.status|status}</span>
                                 </td>
                                 <td>
                                     <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$vo.id}" ></span>
@@ -89,6 +90,10 @@
                         </tbody>
                     </table>
                     </from>
+                        <!--分页-->
+                        <div>
+                            {$pages}
+                        </div>
                     <div>
                         <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
                     </div>
@@ -111,6 +116,7 @@
 <script>
     var SCOPE = {
         'edit_url' : '/admin.php?c=positioncontent&a=edit',
+        'del_url' : '/admin.php?c=positioncontent&a=del',
         'set_status_url' : '/admin.php?c=positioncontent&a=setStatus',
         'add_url' : '/admin.php?c=positioncontent&a=add',
         'listorder_url' : '/admin.php?c=positioncontent&a=listorder',
