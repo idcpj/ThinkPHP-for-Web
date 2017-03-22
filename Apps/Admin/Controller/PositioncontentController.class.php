@@ -52,17 +52,20 @@
 
 		//添加 更新
 		public function add(){
+			//更新
+			$data['url']= $_SERVER['HTTP_REFERER'];
 			if($_POST['id']){
+
 				$id = $_POST['id'];
 				unset($_POST['id']);
 				$res = D('PositionContent')->update($id,$_POST);
 				if($res){
-					return show(1,'更新成功');
+					return show(1,'更新成功',$data);
 				}else{
-					return show(0,'更新失败');
+					return show(0,'更新失败',$data);
 				}
 			}else{
-				//推荐位
+				//推荐位添加
 				if($_POST){
 					$res = D('PositionContent')->insert($_POST);
 					if($res){

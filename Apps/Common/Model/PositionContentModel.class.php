@@ -53,8 +53,6 @@
 			$page =($p - 1)*$pageSize;
 			$res = $this->_db->where($cond)->order('listorder ,id')->limit($page,$pageSize)->select();
 			return $res;
-
-
 		}
 
 		//总新闻数
@@ -101,6 +99,16 @@
 			if(is_numeric($id)){
 				return $this->_db->where('id='.$id)->save(array('status'=>$status));
 			}
+		}
+
+		//
+		public function getPositionById($data,$num){
+			$cond =array(
+				'status'=>1,
+				'position_id'=>$data,
+			);
+
+			return $this->_db->where($cond)->limit($num)->select();
 		}
 
 

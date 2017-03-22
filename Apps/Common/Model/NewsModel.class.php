@@ -15,8 +15,6 @@
 
 		/**
 		 * 插入新闻
-		 * @param array $data		 *
-		 * @return bool|mixed
 		 */
 		public function insert($data=array()){
 			if(!is_array($data) || !$data){
@@ -34,13 +32,18 @@
 		 * 新闻分页列表
 		 */
 		public function getNews($data,$page,$pageSize=10){
+			$conditions['status'] = array('neq',-1);
+
 			if(isset($data['title']) && $data['title']){
 				$conditions['title'] = array('like','%'.$data['title'].'%');
 			}
 			if(isset($data['catid']) && $data['catid']){
 				$conditions['catid'] = intval($data['catid']);
 			}
-			$conditions['status'] = array('neq',-1);
+			if(isset($data['status']) && $data['status']){
+				$conditions['status'] = $data['status'];
+			}
+
 
 			$offset = ($page-1)*$pageSize;
 
@@ -49,10 +52,10 @@
 
 		/**
 		 * 获取新闻条数
-		 * @param array $data
-		 * @return mixed
 		 */
 		public function getNewsCount($data = array()){
+			$conditions['status'] = array('neq',-1);
+
 			if(isset($data['title']) && $data['title']){
 				$conditions['title'] = array('like','%'.$data['title'].'%');
 			}
@@ -60,7 +63,10 @@
 				$conditions['catid'] = intval($data['catid']);
 			}
 
-			$conditions['status'] = array('neq',-1);
+			if(isset($data['status']) && $data['status']){
+				$conditions['status'] = $data['status'];
+			}
+
 
 			$res= $this->_db->where($conditions)->count();
 			return $res;
@@ -68,8 +74,6 @@
 
 		/**
 		 * 编辑展示
-		 * @param $id
-		 * @return bool|mixed
 		 */
 		public function newsEdit($id){
 			if(is_numeric($id)){
@@ -81,11 +85,9 @@
 
 		/**
 		 * 更新内容
-		 * @param $data
-		 * @return bool
 		 */
 		public function update($data){
-			if($data['news_id']){
+			if($data['news_id'] && !$data['count']){
 				$news_id = $data['news_id'];
 				unset($data['news_id']);
 				$data['update_time']=time();
@@ -97,8 +99,6 @@
 
 		/**
 		 * 删除新闻
-		 * @param $data
-		 * @return mixed
 		 */
 		public function delNews($data){
 			if(is_numeric($data['id'])){
@@ -127,12 +127,44 @@
 			}
 		}
 
+		//通过id获取一条新闻
 		public function getNewsById($news_id){
 			if(is_numeric($news_id)){
-				$news =$this->_db->where('news_id='.$news_id)->find();
+				$cond = array(
+					'status'=>array('neq',-1),
+					'news_id'=>$news_id
+				);
+				$news =$this->_db->where($cond)->find();
 				return $news;
 			}else{
 				return false;
+			}
+		}
+
+		//获取新闻
+		public function getNewsContent($num=30){
+			if($num){
+				$cond = array(
+					'status'=>1,
+					'thumb'=>array('neq',''),
+				);
+
+				return $this->_db->where($cond)->limit($num)->select();
+			}else{
+				return false;
+			}
+		}
+
+		//获取排行
+		public function getBrank($data ,$limit=10){
+			return $this->_db->where($data)->order('posids desc ,news_id desc')->limit($limit)->select();
+		}
+
+		//阅读量加+1
+		public function countAddOne($news_id,$count){
+			if(is_numeric($news_id) &&is_numeric($count)){
+				$data['count']=$count;
+				return $this->_db->where('news_id='.$news_id)->save($data);
 			}
 		}
 	}

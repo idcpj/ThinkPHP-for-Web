@@ -17,13 +17,14 @@
 				$this->assign('catid',$conds['catid']);
 			}
 
-
+			//分页code
 			$page = $_REQUEST['p']?intval($_REQUEST['p']):1;
 			$pageSize = 3;
 
 			$news = D('News')->getNews($conds,$page,$pageSize);
 			$count =D('News')->getNewsCount($conds);
 			$pageres = (new Page($count,$pageSize))->show();
+
 			$positions = D('Position')->getNormalPositions();
 			$this->getInfo();
 
@@ -74,13 +75,14 @@
 				}
 			}else{
 				//修改新闻
+				$data['url']= $_SERVER['HTTP_REFERER'];
 				$news_id = D('News')->update($_POST);
 				if($news_id !=false ){
 					$id = D('NewsContent')->update($_POST['news_id'],$_POST);
 					if(is_numeric($id)){
-						return show(1, '更新成功');
+						return show(1, '更新成功',$data);
 					}else{
-						return show(0, '更新失败');
+						return show(0, '更新失败',$data);
 					}
 				}
 			}

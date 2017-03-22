@@ -13,9 +13,6 @@
 
 		/**
 		 * 插入内容
-		 * @param array $data
-		 *
-		 * @return bool|mixed
 		 */
 		public function insert($data=array()){
 			if(!is_array($data) || !$data){
@@ -32,8 +29,6 @@
 
 		/**
 		 * 通过id获取内容能
-		 * @param $id
-		 * @return mixed
 		 */
 		public function contentEdit($id){
 			if(is_numeric($id)){
@@ -41,6 +36,7 @@
 			}
 		}
 
+		//更新
 		public function update($news_id,$data){
 			if(is_numeric($news_id) && $data['content']){
 				$content['content'] =$data['content'];

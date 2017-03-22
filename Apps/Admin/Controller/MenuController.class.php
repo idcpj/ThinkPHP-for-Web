@@ -99,9 +99,11 @@
 		 */
 		public function update()
 		{
+
+			$data['url']= $_SERVER['HTTP_REFERER'];
 			$res = D('Menu')->updateMenus($_POST);
 			if($res){
-				return show(1, "更新成功");
+				return show(1, "更新成功",$data);
 			}
 
 			return show(0, '更新失败,数据不合法,或数据未改变');

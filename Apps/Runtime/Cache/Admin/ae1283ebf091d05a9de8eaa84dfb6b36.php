@@ -148,7 +148,7 @@
 <script>
 	var SCOPE = {
 		'save_url' : '/admin.php?c=position&a=add',
-		'jump_url' : '/admin.php?c=position'
+//		'jump_url' : '/admin.php?c=position'
 	};
 
 

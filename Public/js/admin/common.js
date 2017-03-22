@@ -24,7 +24,7 @@ $('#singcms-button-submit').click(function () {
         if (result.status === 1) {
             dialog.success(result.message, SCOPE.jump_url);
         } else if (result.status === 0) {
-            dialog.error(result.message);
+            dialog.error(result.message,SCOPE.jump_url);
         }
     }, 'JSON')
 });
@@ -148,6 +148,7 @@ $('#singcms-push').click(function () {
             dialog.error(result.message,result['data']['url']);
         }
     },'JSON');
+});
 
 
-})
+

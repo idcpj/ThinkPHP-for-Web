@@ -11,10 +11,6 @@
 
 		/**
 		 * 插入数据
-		 *
-		 * @param array $data
-		 *
-		 * @return int
 		 */
 		public function insert($data = array())
 		{
@@ -28,19 +24,13 @@
 
 		/**
 		 * 获取分页的数据
-		 *
-		 * @param     $data
-		 * @param     $page
-		 * @param int $pageSize
-		 *
-		 * @return mixed
 		 */
 		public function getMenus($data, $page, $pageSize = 10)
 		{
 			//删除状态为-1
 			$data['status'] = array('neq', '-1');
 			$offset = ($page - 1) * $pageSize;
-			$list = $this->_db->where($data)->order('listorder,menu_id ')->limit($offset, $pageSize)->select();
+			$list = $this->_db->where($data)->order('type,listorder,menu_id ')->limit($offset, $pageSize)->select();
 
 			return $list;
 		}
@@ -62,9 +52,6 @@
 
 		/**
 		 * 删除菜单通过id
-		 * @param $id
-		 *
-		 * @return bool
 		 */
 		public function delMenusById($id,$status){
 			if(!is_numeric($id) || !$id){
@@ -81,9 +68,6 @@
 
 		/**
 		 * 通过id获取
-		 * @param $id
-		 *
-		 * @return mixed
 		 */
 		public function getMenusById($id){
 			return $this->_db->where('menu_id='.$id)->find();
@@ -91,9 +75,6 @@
 
 		/**
 		 * 更新菜单
-		 * @param $data
-		 *
-		 * @return bool
 		 */
 		public function updateMenus($data){
 			$id = intval($data['menu_id']);
@@ -104,10 +85,6 @@
 
 		/**
 		 * 排序
-		 * @param $id
-		 * @param $value
-		 *
-		 * @return bool
 		 */
 		public function listOderById($id,$value){
 			if(!is_numeric($id)){
@@ -135,7 +112,6 @@
 
 		/**
 		 * 获取前台栏目
-		 * @return string
 		 */
 		public function getBarMenus(){
 			$data = array(
@@ -143,11 +119,20 @@
 				'type'=>0.
 			);
 			$res = $this->_db->where($data)->order('listorder ,menu_id ')->select();
-			if($res ===false){
-				return "查询出错";
-			}else{
-				return $res;
-			}
+
+			return $res;
 		}
+
+		//获取前端菜单
+		public function getTypeMenu($id){
+			$cond=array(
+				'type'=>0,
+				'status'=>1,
+				'menu_id'=>$id
+
+			);
+			return $this->_db->where($cond)->find();
+		}
+
 
 	}
