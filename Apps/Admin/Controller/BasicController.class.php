@@ -31,4 +31,9 @@
 			}
 		}
 
+		public function cache(){
+
+			$this->display();
+		}
+
 	}

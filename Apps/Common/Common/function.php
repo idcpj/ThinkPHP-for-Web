@@ -19,9 +19,6 @@
 
 	/**
 	 *先通过此方法构建admin管理用户
-	 * @param $password
-	 *
-	 * @return string
 	 */
 	function getMd5Password($password)
 	{
@@ -37,8 +34,6 @@
 
 	/**
 	 * 状态
-	 * @param $data
-	 * @return string
 	 */
 	function status($data){
 		switch($data){
@@ -56,8 +51,6 @@
 
 	/**
 	 * 获取后台菜单链接
-	 * @param $nav
-	 * @return string
 	 */
 	function getAdminMenuUrl($nav){
 		$url = '/admin.php?c='.$nav['c'].'&a='.$nav['f'];
@@ -69,9 +62,6 @@
 
 	/**
 	 * 菜单栏高亮
-	 * @param $navC
-	 *
-	 * @return string
 	 */
 	function getActive($navC){
 		$c = strtolower(CONTROLLER_NAME);
@@ -83,8 +73,6 @@
 
 	/**
 	 * 编辑器返回json
-	 * @param $status
-	 * @param $data
 	 */
 	function showKind($status,$data){
 		header('Content-type:application/json,charset=UTF-8');
@@ -96,7 +84,6 @@
 
 	/**
 	 * 获取登录username
-	 * @return mixed
 	 */
 	function  getLoginUsername(){
 		return $_SESSION['adminUser']['username'];
@@ -110,14 +97,13 @@
 		return $res['name'];
 	}
 
+	//来源
 	function getconyFrom($copyFrom){
 		return C('COPY_FROM')[$copyFrom];
 	}
 
 	/**
 	 * 缩略图
-	 * @param $thumb
-	 * @return string
 	 */
 	function getThumb($thumb){
 		if($thumb){

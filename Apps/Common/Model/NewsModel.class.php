@@ -66,8 +66,6 @@
 			if(isset($data['status']) && $data['status']){
 				$conditions['status'] = $data['status'];
 			}
-
-
 			$res= $this->_db->where($conditions)->count();
 			return $res;
 		}
@@ -157,14 +155,8 @@
 
 		//获取排行
 		public function getBrank($data ,$limit=10){
-			return $this->_db->where($data)->order('posids desc ,news_id desc')->limit($limit)->select();
+			return $this->_db->where($data)->order('counts desc ,news_id desc')->limit($limit)->select();
 		}
 
-		//阅读量加+1
-		public function countAddOne($news_id,$count){
-			if(is_numeric($news_id) &&is_numeric($count)){
-				$data['count']=$count;
-				return $this->_db->where('news_id='.$news_id)->save($data);
-			}
-		}
+
 	}

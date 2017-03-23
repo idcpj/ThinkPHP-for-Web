@@ -28,7 +28,6 @@
 			$positions = D('Position')->getNormalPositions();
 			$this->getInfo();
 
-
 			$this->assign('news',$news);
 			$this->assign('positions',$positions);
 			$this->assign('pageres',$pageres);

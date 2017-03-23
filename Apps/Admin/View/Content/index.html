@@ -34,7 +34,7 @@
                 <option value='' >全部分类</option>
 
                 <foreach name="webSiteMenu" item="sitenav">
-                  <option value="{$sitenav.menu_id}" <if condition="$catid eq $sitenav['menu_id']">selected="selected"</if> >{$sitenav.name} </option>
+                  <option value="{$sitenav.menu_id}" <if condition="$catid eq $sitenav['menu_id']">selected="selected"</if>  >{$sitenav.name} </option>
                 </foreach>
 
               </select>

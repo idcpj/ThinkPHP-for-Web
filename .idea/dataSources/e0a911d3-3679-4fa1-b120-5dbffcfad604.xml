@@ -240,7 +240,7 @@ f</ColNames>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="53" parent="10" name="count">
+    <column id="53" parent="10" name="counts">
       <Position>7</Position>
       <DataType>int(3)|0</DataType>
     </column>

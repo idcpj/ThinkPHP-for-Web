@@ -239,3 +239,11 @@ INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
 SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 AND `news_id` = 15 LIMIT 1   [ RunTime:0.0009s ]
 SQL: INSERT INTO `cms_position_content` (`news_id`,`title`,`thumb`,`listorder`,`status`,`create_time`,`update_time`,`position_id`) VALUES ('15','广告位测试','./Apps/upload/2017/03/22/58d2289dd02f1.jpg','0','1','1490168104','0','4') [ RunTime:0.0005s ]
 
+[ 2017-03-22T16:54:54+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+NOTIC: [8] Undefined index: count D:\phpStudy\WWW\ThinkPHP-for-Web\Apps\Common\Model\NewsModel.class.php 第 90 行.
+SQL: UPDATE `cms_news` SET `title`='广告位测试',`small_title`='广告位测试12',`thumb`='./Apps/upload/2017/03/22/58d2289dd02f1.jpg',`title_font_color`='#ed568b',`catid`='31',`copyfrom`='0',`description`='广告位测试',`keywords`='广告位测试',`update_time`='1490172893' WHERE ( news_id=15 ) [ RunTime:0.0010s ]
+SQL: UPDATE `cms_news_content` SET `content`='123123',`update_time`='1490172894' WHERE ( news_id=15 ) [ RunTime:0.0006s ]
+

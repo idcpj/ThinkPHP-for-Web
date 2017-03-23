@@ -34,8 +34,9 @@
 
 					<div class="news-detail">
 						<h1><?php echo ($vo["title"]); ?></h1>
-
-						<?php echo ($vo["content"]); ?>
+						<p width="80%">
+							<?php echo ($vo["content"]); ?>
+						</p>
 					</div>
 					
 				</div>

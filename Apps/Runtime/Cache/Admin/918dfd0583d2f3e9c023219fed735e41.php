@@ -125,7 +125,7 @@
 <script>
   $("#cache-index").click(function(){
 
-	var url = 'index.php?c=index&a=build_html';
+	var url = '/index.php?c=index&a=build_html';
 	var jump_url = '/admin.php?c=basic&a=cache';
 	var postData = {};
 

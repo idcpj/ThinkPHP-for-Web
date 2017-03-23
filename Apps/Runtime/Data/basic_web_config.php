@@ -1,1 +1,1 @@
-a:5:{s:5:"title";s:4:"demo";s:8:"keywords";s:28:"以写东西为主的博客1";s:11:"description";s:27:"以写东西为主的博客";s:9:"dumpmysql";s:1:"0";s:10:"cacheindex";s:1:"0";}
+a:5:{s:5:"title";s:4:"demo";s:8:"keywords";s:28:"以写东西为主的博客1";s:11:"description";s:27:"以写东西为主的博客";s:9:"dumpmysql";s:1:"1";s:10:"cacheindex";s:1:"1";}

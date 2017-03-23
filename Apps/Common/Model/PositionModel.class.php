@@ -38,5 +38,13 @@ class PositionModel extends \Think\Model{
 		}
 	}
 
+	//获取推荐位数量
+	public function getCount(){
+		$cond=array(
+			'status'=>1,
+		);
+		return $this->_db->where($cond)->count();
+	}
+
 
 }

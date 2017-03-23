@@ -1,0 +1,42 @@
+[
+    {
+        "name": "naux/iplocation",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/NauxLiu/IpLocation.git",
+            "reference": "637d1df00fe6edaf8bd636190986a20d6f381ac0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/NauxLiu/IpLocation/637d1df00fe6edaf8bd636190986a20d6f381ac0.zip",
+            "reference": "637d1df00fe6edaf8bd636190986a20d6f381ac0",
+            "shasum": ""
+        },
+        "time": "2014-11-21T16:14:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Naux\\IpLocation\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "NauxLiu",
+                "email": "xuancoder@gmail.com",
+                "homepage": "http://naux.me"
+            },
+            {
+                "name": "joyphper",
+                "homepage": "http://joyphper.net"
+            }
+        ],
+        "description": "基于纯真IP库的,查询IP归属地PHP库"
+    }
+]

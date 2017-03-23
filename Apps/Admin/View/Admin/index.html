@@ -41,6 +41,7 @@
                                     <th>用户名</th>
                                     <th>真实姓名</th>
                                     <th>最后登录时间</th>
+                                    <th>最后登录ip</th>
                                     <th>状态</th>
                                     <th>操作</th>
                                 </tr>
@@ -53,8 +54,9 @@
                                         <td>{$vo.username}</td>
                                         <td>{$vo.realname}</td>
                                         <td>{$vo.lastlogintime|date="Y-m-d H:i",###}</td>
+                                        <td>{$vo.lastloginip}</td>
                                         <!--<td><span  attr-status="<if condition="$vo['status'] eq 1">0<else/>1</if>"  attr-id="{$vo.admin_id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$vo.status|status}</span></td>-->
-                                        <td>123</td>
+                                        <td>{$vo.status|status}</td>
                                         <td>    <a href="javascript:void(0)" attr-id="{$vo.admin_id}" id="singcms-delete"  attr-a="admin" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                                     </tr>
                                 </volist>
@@ -82,6 +84,7 @@
         'add_url' : '/admin.php?c=admin&a=add',
         'edit_url' : '/admin.php?c=admin&a=edit',
         'set_status_url' : '/admin.php?c=admin&a=setStatus',
+        'del_url':'admin.php?c=admin&a=del',
         'index_url' : '/',
 
     }

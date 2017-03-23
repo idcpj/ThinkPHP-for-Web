@@ -2,10 +2,6 @@
 	namespace Admin\Controller;
 	use Think\Controller;
 
-	/**
-	 * Class 登录类
-	 * @package Admin\Controller
-	 */
 	class LoginController extends Controller
 	{
 		public function index()
@@ -24,7 +20,7 @@
 		{
 			$username = $_POST['username'];
 			$password = $_POST['password'];
-		if( ! trim($username)){
+			if( ! trim($username)){
 				return show(0, "账户不能为空");
 			}
 			if( ! trim($password)){
@@ -38,6 +34,7 @@
 				return show(0, "密码错误");
 			}
 			session('adminUser',$ret);
+			D('Admin')->lastLogin($ret['admin_id']);
 			$this->ajaxReturn([1,"登陆成功"]);
 		}
 

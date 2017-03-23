@@ -31,9 +31,9 @@
 		 * 通过id获取内容能
 		 */
 		public function contentEdit($id){
-			if(is_numeric($id)){
-				return $this->_db->where('news_id='.$id)->find();
-			}
+			//if(is_numeric($id)){
+				return $this->_db->where(array('news_id'=>$id))->find();
+			//}
 		}
 
 		//更新

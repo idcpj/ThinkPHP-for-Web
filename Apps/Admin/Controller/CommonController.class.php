@@ -27,14 +27,12 @@
 
 		/**
 		 * 获取登录用户信息
-		 * @return array
 		 */
 		public function getLoginUser(){
 			return session('adminUser');
 		}
 
 		/**判断是否登录
-		 * @return bool
 		 */
 		public function isLogin(){
 			$user = $this->getLoginUser();

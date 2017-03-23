@@ -43,7 +43,7 @@
 <div id="wrapper">
 
     <?php
- $navs = D('Menu')->getAdminMenus(); $index = 'index'; ?>
+ $navs = D('Menu')->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v){ if($v['c']=='admin'&& $username !='admin' ){ unset($navs[$k]); } } ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -159,7 +159,7 @@
                                     <i class="fa glyphicon glyphicon-asterisk  fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo ($news["count"]); ?></div>
+                                        <div class="huge"><?php echo ($news["counts"]); ?></div>
                                     <div>文章最大阅读数</div>
                                 </div>
                             </div>
