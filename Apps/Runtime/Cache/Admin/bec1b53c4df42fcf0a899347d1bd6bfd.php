@@ -115,7 +115,7 @@
               <select class="form-control" name="catid">
                 <option value='' >全部分类</option>
 
-                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" <?php if($catid == $sitenav['menu_id']): ?>selected="selected"<?php endif; ?> ><?php echo ($sitenav["name"]); ?> </option><?php endforeach; endif; ?>
+                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" <?php if($catid == $sitenav['menu_id']): ?>selected="selected"<?php endif; ?>  ><?php echo ($sitenav["name"]); ?> </option><?php endforeach; endif; ?>
 
               </select>
             </div>

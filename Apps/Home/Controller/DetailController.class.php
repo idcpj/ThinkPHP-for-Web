@@ -27,10 +27,12 @@
 			$res = array(
 				'rankNews'     =>$this->rankNews(),
 				'advNews'      =>$this->advNews(),
+				//通过catid来判断属于什么分类
 				'catid'         =>$news['catid'],
 				'news'          =>$news
 			);
 			$this->assign('result',$res);
+
 			if($type == 'buildHtml'){
 				$this->buildHtml('index',HTML_PATH,'Detail/index');
 			}else{
